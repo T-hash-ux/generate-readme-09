@@ -14,9 +14,22 @@ function renderLicenseBadge(license) {
   return badge;
 }
 
-// TODO: Create a function that returns the license link
+// Created a function that returns the license link
 // If there is no license, return an empty string
-function renderLicenseLink(license) {}
+function renderLicenseLink(license) {
+  let licenseLink;
+  if (license === 'IBM') {
+    licenseLink = '[IBM license](https://www.ibm.com/about/software-licensing/licensing/license_information_documents)';
+  } else if (license === 'MIT') {
+    licenseLink = '[MIT license](https://www.mit.edu/~amini/LICENSE.md)';
+  } else if (license === 'ISC') {
+    licenseLink = '[ISC license](https://www.isc.org/licenses/)';
+  } else {
+    licenseLink = '';
+  }
+  return licenseLink;
+
+  }
 
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
