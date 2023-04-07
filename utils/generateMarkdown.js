@@ -42,9 +42,39 @@ function renderLicenseSection(license) {
   return renderLicense;
 }
 
-// TODO: Create a function to generate markdown for README
+// Created a function to generate markdown for README
 function generateMarkdown(data) {
+  let displayBadge;
+  if (renderLicenseSection(data.license) === '') {
+    displayBadge = '';
+  } else {
+    displayBadge = `${renderLicenseBadge(data.license)}`;
+  }
+
   return `# ${data.title}
+  ${displayBadge}
+  ## description
+  ${data.description}
+  ## table of contents
+  * [description](#description)
+  * [installation](#installation)
+  * [usage](#usage)
+  * [license](#License)
+  * [contribution](#contribution)
+  * [test](#test)
+  * [questions](#questions)
+  ## installation
+  ${data.installation}
+  ## usage
+  ${data.usage}
+  ${renderLicenseSection(data.license)}
+  ## contribution
+  ${data.contribution}
+  ## test
+  ${data.test}
+  ## questions
+  Github profile- ${data.github}. Link to profile [Github profile](https://github.com/${data.github}).\n
+  For any other questions you can reach me at ${data.email})
 
 `;
 }
