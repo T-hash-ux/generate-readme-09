@@ -36,10 +36,10 @@ function renderLicenseLink(license) {
 function renderLicenseSection(license) {
   let renderedLicense;
   if (license !== 'none') {
-    renderLicense = `## License\n This application is covered under ${license} license.\n
+    renderedLicense = `## License\n This application is covered under ${license} license.\n
     Here is a link for more information about this license ${renderLicenseLink(license)}\n`
   }
-  return renderLicense;
+  return renderedLicense;
 }
 
 // Created a function to generate markdown for README
@@ -56,15 +56,17 @@ function generateMarkdown(data) {
   ## description
   ${data.description}
   ## table of contents
-  * [description](#description)
-  * [installation](#installation)
-  * [usage](#usage)
-  * [license](#License)
-  * [contribution](#contribution)
-  * [test](#test)
-  * [questions](#questions)
-  ## installation
-  ${data.installation}
+  * [Description](#description)
+  * [Installations](#installations)
+  * [Usage](#usage)
+  * [License](#license)
+  * [Contribution](#contribution)
+  * [Test](#test)
+  * [Questions](#questions)
+  
+
+  ## installations
+  ${data.installations}
   ## usage
   ${data.usage}
   ${renderLicenseSection(data.license)}
@@ -74,7 +76,7 @@ function generateMarkdown(data) {
   ${data.test}
   ## questions
   Github profile- ${data.github}. Link to profile [Github profile](https://github.com/${data.github}).\n
-  For any other questions you can reach me at ${data.email})
+  For any other questions you can reach me at ${data.email}
 
 `;
 }
