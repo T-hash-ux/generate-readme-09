@@ -19,3 +19,5 @@ The motivation of creating this was to incorperate my skills and knowledge of wo
 - Set up generateMarkdown.js file by creating functions to render the license badges and link them to the readme, and creating functions to generate Markdowns for each section of the README.
 
 ![Image 2](readme-images/generateMarkdown.jpeg)
+
+Walkthrough video: https://drive.google.com/file/d/1x75bS5OxhE7gQCq5djAiwTLlHeWXHA5y/view

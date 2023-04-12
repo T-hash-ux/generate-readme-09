@@ -1,7 +1,7 @@
 # README Generator
   ![License: IPL 1.0](https://img.shields.io/badge/License-IPL_1.0-blue.svg)
   ## description
-  The purpose of this project is to create a application that will all the user to generate  professional Readme files from the command line. This was created by using inquirer and Node.js.
+  This project was created by using inquirer and node.js to help the user build professional readme files from the command line
   ## table of contents
   * [Description](#description)
   * [Installations](#installations)
@@ -15,7 +15,7 @@
   ## installations
   inquirer 8.2.4
   ## usage
-  javascript, markdown, node.js, and json
+  Javascript, Markdown, Node.js and JSON
   ## License
  This application is covered under IBM license.
 
@@ -24,7 +24,7 @@
   ## contribution
   n/a
   ## test
-  prepared a walkthrough video
+  Prepared a walkthrough video
   ## questions
   Github profile- T-hash-ux. Link to profile [Github profile](https://github.com/T-hash-ux).
 
